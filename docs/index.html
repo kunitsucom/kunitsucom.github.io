@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kunitsu.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sometype Mono', 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #555;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        a {
+            color: #555;
+        }
+
+        .organization-sns-icons,
+        .member-sns-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .organization-sns-icons a,
+        .member-sns-icons a {
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .organization-sns-icons a:hover,
+        .member-sns-icons a:hover {
+            color: #007BFF;
+        }
+
+        .organization {
+            display: flex;
+            text-align: center;
+            gap: 1px;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 140px;
+        }
+
+        .organization-img {
+            width: auto;
+            height: 10em;
+            border-radius: 50%;
+        }
+
+        .organization-info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .members {
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        }
+
+        .member {
+            text-align: center;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .member-img {
+            width: auto;
+            height: 2.5em;
+            border-radius: 50%;
+        }
+
+        .member-info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .member-name {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <div class="organization">
+            <img src="https://avatars.githubusercontent.com/u/113893237" alt="kunitsu.com logo"
+                class="organization-img">
+            <div class="organization-info">
+                <h1 class="organization-name"><a href="https://kunitsucom.github.io" title="X">kunitsu.com</a></h1>
+                <div class="organization-sns-icons">
+                    <a href="https://github.com/kunitsucom" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/kunitsucom" title="X"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="members">
+        <div class="member">
+            <img src="https://avatars.githubusercontent.com/u/29125616" alt="ginokent logo" class="member-img">
+            <div class="member-info">
+                <h4 class="member-name">ginokent</h4>
+                <div class="member-sns-icons">
+                    <a href="https://github.com/ginokent" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/ginokentdev" title="X"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
